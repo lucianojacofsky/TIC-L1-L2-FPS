@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject objectToClone;
+
+  
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.N))
+        {
+
+            Instantiate(objectToClone);
+        }
     }
 }
