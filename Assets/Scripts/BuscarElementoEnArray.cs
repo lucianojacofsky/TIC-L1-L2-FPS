@@ -39,6 +39,7 @@ public class BuscarElementoEnArray : MonoBehaviour
                 Destroy(arrayDeMesas[i]);
                 return;
             }
+            i++;
         }
     }
 }
